@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+.cache/
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Auto-Novel 用户数据（不要提交）
+auto-novel-projects/
+user_projects/
+my_novels/
+
+# LLM 缓存 + 日志（隐私 + 调试信息）
+.auto-novel/
+*.log
+auto-novel-logs/
+
+# API Keys（绝对）
+.env.env.local
+
+# 测试输出
+tmp/
+test_output/
+*.tmp
+
+# 打包文件
+*.tar.gz
+*.zip
+*.whl
+
+# 备份文件
+*.bak
+*~
+*.orig

@@ -1,0 +1,77 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "auto-novel"
+version = "1.0.7"
+description = "AI 中文长篇创作 Skill - 让 AI 帮你写到 100 万字不崩设定"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Auto-Novel Contributors"}
+]
+keywords = [
+    "ai",
+    "writing",
+    "novel",
+    "fiction",
+    "chinese",
+    "long-form",
+    "creative",
+    "llm"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: Chinese (Simplified)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Artistic Software",
+    "Topic :: Text Processing :: Markup",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "pyyaml>=5.0",
+    "gradio>=4.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "pytest-cov>=4.0",
+    "black>=22.0",
+    "flake8>=5.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/<your-org>/auto-novel"
+Issues = "https://github.com/<your-org>/auto-novel/issues"
+Discussions = "https://github.com/<your-org>/auto-novel/discussions"
+
+[project.scripts]
+auto-novel = "auto_novel.cli:main"
+auto-novel-web = "auto_novel.web.app:main"
+auto-novel-score = "auto_novel.scripts.chapter_scorer:main"
+auto-novel-facts = "auto_novel.scripts.fact_extractor:main"
+auto-novel-kb = "auto_novel.scripts.kb_manager:main"
+
+[tool.setuptools]
+packages = ["auto_novel"]
+
+[tool.setuptools.package-data]
+auto_novel = [
+    "core/*.md",
+    "protocols/*.md",
+    "constants/*.md",
+    "references/*.md",
+    "kb-templates/*.md",
+    "kb-templates/genre/*.md",
+    "scripts/*.py",
+    "web/*.py",
+]

@@ -1,0 +1,49 @@
+{
+  "name": "✨ Feature Request",
+  "description": "提议一个新功能",
+  "title": "[Feature]: ",
+  "labels": ["enhancement"],
+  "body": [
+    {
+      "type": "textarea",
+      "id": "problem",
+      "attributes": {
+        "label": "你要解决的问题是什么？",
+        "description": "清晰描述你想解决什么问题",
+        "placeholder": "作为网文作者，我希望..."
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "solution",
+      "attributes": {
+        "label": "你建议的解决方案",
+        "description": "你希望怎么解决？"
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "alternatives",
+      "attributes": {
+        "label": "考虑过的替代方案",
+        "description": "有没有考虑过其他方式？"
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "use-case",
+      "attributes": {
+        "label": "使用场景",
+        "description": "举一个具体场景的例子"
+      }
+    },
+    {
+      "type": "dropdown",
+      "id": "genre",
+      "attributes": {
+        "label": "涉及题材（可选）",
+        "options": ["玄幻仙侠", "都市现代", "言情古风", "悬疑推理", "科幻未来", "其他 / 不限"]
+      }
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "name": "🐛 Bug Report",
+  "description": "报告一个 bug",
+  "title": "[Bug]: ",
+  "labels": ["bug"],
+  "body": [
+    {
+      "type": "input",
+      "id": "version",
+      "attributes": {
+        "label": "Auto-Novel 版本",
+        "placeholder": "v1.0.7"
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "what-happened",
+      "attributes": {
+        "label": "发生了什么？",
+        "description": "清晰简洁地描述 bug",
+        "placeholder": "运行 scripts/chapter_scorer.py 时报错..."
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "reproduce",
+      "attributes": {
+        "label": "复现步骤",
+        "description": "复现 bug 的步骤",
+        "placeholder": "1. cd ~/my-novel\n2. python3 scripts/chapter_scorer.py chapter_001.md\n3. 看到错误..."
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "expected",
+      "attributes": {
+        "label": "期望行为",
+        "description": "你认为应该发生什么"
+      }
+    },
+    {
+      "type": "textarea",
+      "id": "logs",
+      "attributes": {
+        "label": "日志 / 错误信息",
+        "description": "复制相关的日志或截图"
+      }
+    },
+    {
+      "type": "dropdown",
+      "id": "python-version",
+      "attributes": {
+        "label": "Python 版本",
+        "options": ["3.9", "3.10", "3.11", "3.12", "其他"]
+      }
+    },
+    {
+      "type": "dropdown",
+      "id": "os",
+      "attributes": {
+        "label": "操作系统",
+        "options": ["Ubuntu 22.04", "Ubuntu 24.04", "macOS 14", "macOS 15", "Windows 11", "其他"]
+      }
+    }
+  ]
+}
